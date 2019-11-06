@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="uft-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Protocolos de Internet(IP)"</title>
+	<style>
+	@media (min-width: 576px) and (max-width: 1199.98px) {
+	.todo {
+	width: 100%;
+	}
+	}
+	html {
+	background-image: url(https://origenarts.com/wp-content/uploads/2018/01/azul-google-material-design.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	}
+	.descripcion {
+	display:block;
+	max-width: 1000px;
+	min-width: 10px;
+	margin: 3em 10%;
+	padding: 1em 1em;
+	border-color: black;
+	border-style: solid;
+	border-width: 5px 5px;
+	background-color: white;
+	position:absolute;
+	font-size: 20px;
+	}
+	.uno {
+	display:block;
+	margin: auto;
+	border-color: black;
+	border-style: solid;
+	border-width: 5px 5px;
+	background-color: white;
+	}
+	.dos {
+	display:block;
+	margin:auto;
+	border-color: black;
+	border-style: solid;
+	border-width: 5px 5px;
+	background-color: white;
+	}
+	</style>
+	<body>
+		<div class="todo">
+		<p class="descripcion">El diseño del protocolo IP se realizó presuponiendo que la entrega de los paquetes de datos sería no confiable.<br><br>
+		Por ello, IP tratará de realizarla del mejor modo posible, mediante técnicas de enrutamiento,
+		sin garantías de alcanzar el destino final pero tratando de buscar la mejor ruta entre las conocidas por la máquina que esté usando IP.<br><br>
+		Los datos en una red basada en IP son enviados en bloques conocidos como paquetes o datagramas (en el protocolo IP estos términos se suelen usar indistintamente).<br><br>
+		En particular, en IP no se necesita ningún intercambio de información de control previa a la carga útil (datos), como sí que ocurre, por ejemplo, con TCP.<br>
+		IP provee un servicio de datagramas no fiable (también llamado del "mejor esfuerzo": lo hará lo mejor posible, pero garantizando poco).<br><br>
+		<img class="uno" src="https://s3.amazonaws.com/cdn.wp.m4ecmx/wp-content/uploads/2019/07/17173342/Internet-en-un-minuto-compressor.jpg" width="400" height="200"><br>
+		IP no provee ningún mecanismo para determinar si un paquete alcanza o no su destino y únicamente proporciona seguridad (mediante checksums o sumas de comprobación)
+		de sus cabeceras y no de los datos transmitidos.<br><br>
+		Por ejemplo, al no garantizar nada sobre la recepción del paquete, éste podría llegar dañado, en otro orden con respecto a otros paquetes, duplicado o simplemente no llegar.
+		Si se necesita fiabilidad, ésta es proporcionada por los protocolos de la capa de transporte, como TCP.
+		Las cabeceras IP contienen las direcciones de las máquinas de origen y destino (direcciones IP), direcciones que serán usadas por los enrutadores (routers)
+		para decidir el tramo de red por el que reenviarán los paquetes.<br>
+		El IP es el elemento común en el Internet de hoy.<br><br>
+		<img class="dos" src="https://cdn.comparitech.com/wp-content/uploads/2019/01/IPV6-vs-IPV4.jpg" width="750"><br>
+		El actual y más popular protocolo de red es IPv4. IPv6 es el sucesor propuesto de IPv4; <br>
+		poco a poco Internet está agotando las direcciones disponibles por lo que IPv6 utiliza direcciones de fuente y destino de 128 bits, muchas más direcciones que las que provee IPv4 con 32 bits.<br><br>
+		Las versiones de la 0 a la 3 están reservadas o no fueron usadas. La versión 5 fue usada para un protocolo experimental. Otros números han sido asignados, usualmente para protocolos experimentales,
+		pero no han sido muy extendidos.<br><br>
+		Si la información a transmitir ("datagramas") supera el tamaño máximo "negociado" (MTU) en el tramo de red por el que va a circular podrá ser dividida en paquetes más pequeños, 
+		y reensamblada luego cuando sea necesario.<br> <br>
+		Estos fragmentos podrán ir cada uno por un camino diferente dependiendo de como estén de congestionadas las rutas en cada momento.<br></p>
+		</div>
+	</body>
+	</html>
